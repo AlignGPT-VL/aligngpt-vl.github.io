@@ -95,6 +95,11 @@
             <span class="author-block">Nanjing University</span>
           </div>
 
+          <!-- <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal Contribution,</span>
+            <span class="author-block"><sup>#</sup>Corresponding Author.</span>
+          </div> -->
+
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -176,7 +181,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Multimodal Large Language Models (MLLMs) are widely regarded as crucial in the exploration of Artificial General Intelligence (AGI). The core of MLLMs lies in their capability to achieve cross-modal alignment. To attain this goal, current MLLMs typically follow a two-phase training paradigm: the pre-training phase and the instruction-tuning phase. Despite their success, there are shortcomings in the modeling of alignment capabilities within these models. Firstly, during the pre-training phase, there are inconsistencies in the degree of alignment among image-text pairs. Secondly, different tasks demand distinct alignment capabilities during the instruction-tuning phase. To tackle these issues, we propose a new multimodal large language model AlignGPT to effectively enhance the alignment capabilities of MLLMs. More precisely, in the pre-training phase, we utilize the similarity of image-text pairs as a control signal to tackle the issue of varying degrees of alignment. Then, during the instruction-tuning phase, we begin by adjusting these control signals to shape different levels of alignment capabilities. On this basis, we allocate global alignment capabilities to each task while also dynamically configuring distinct local alignment capabilities based on the individual requirements of each task. Extensive experimental results show that our model achieves competitive performance on 12 downstream tasks.
+            Multimodal Large Language Models (MLLMs) are widely regarded as crucial in the exploration of Artificial General Intelligence (AGI). The core of MLLMs lies in their capability to achieve cross-modal alignment. To attain this goal, current MLLMs typically follow a two-phase training paradigm: the pre-training phase and the instruction-tuning phase. Despite their success, there are shortcomings in the modeling of alignment capabilities within these models. Firstly, during the pre-training phase, there are inconsistencies in the degree of alignment among image-text pairs. Secondly, different tasks demand different levels of alignment capabilities during the instruction-tuning phase. To tackle these issues, we propose a new multimodal large language model AlignGPT to effectively enhance the alignment capabilities of MLLMs. More precisely, in the pre-training stage, instead of treating all image-text pairs equally, we assign different levels of alignment capabilities to different image-text pair, thereby solving the problem of alignment degree in image-text pairing. Then, in the instruction-tuning phase, we not only allocate global alignment capabilities to each task, but also dynamically configuring distinct local alignment capabilities based on the individual requirements of each task. Extensive experimental results show that our model achieves competitive performance on 12 downstream tasks.
           </p>
         </div>
       </div>
@@ -191,7 +196,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Architecture</h2>
         <div class="content has-text-justified">
-          <img src="static/images/architecture.png" alt="AlignGPT" style="width: 100%; height: auto; padding-left:7vw">
+          <img src="static/images/architecture.png" alt="AlignGPT" style="width: 100%; height: auto">
         </div>
       </div>
     </div>
