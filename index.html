@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="AlignGPT: Enhancing Alignment Capability of Multi-modal Large Language Models">
+        content="AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability">
   <meta name="keywords" content="LLM, Multi-modal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AlignGPT: Enhancing Alignment Capability of Multi-modal Large Language Models</title>
+  <title>AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -67,10 +67,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">AlignGPT: Enhancing Alignment Capability of Multi-modal Large Language Models</h1>
+          <h1 class="title is-1 publication-title">AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Fei Zhao</a><sup>*</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=V01xzWQAAAAJ&hl=zh-CN">Fei Zhao</a><sup>*</sup>,</span>
             <span class="author-block">
               <a href="">Taotian Pang</a><sup>*</sup>,
             </span>
@@ -78,7 +78,7 @@
               <a href="">Chunhui Li</a>,
             </span>
             <span class="author-block">
-              <a href="">Zhen Wu</a>,
+              <a href="https://scholar.google.com/citations?user=IoGlgtoAAAAJ&hl=zh-CN">Zhen Wu</a>,
             </span>
             <span class="author-block">
               <a href="">Junjie Guo</a>,
@@ -87,7 +87,7 @@
               <a href="">Shangyu Xing</a>,
             </span>
             <span class="author-block">
-              <a href="">Xinyu Dai</a>
+              <a href="https://scholar.google.com/citations?user=zpWB1CgAAAAJ&hl=zh-CN">Xinyu Dai</a>
             </span>
           </div>
 
@@ -181,7 +181,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Multimodal Large Language Models (MLLMs) are widely regarded as crucial in the exploration of Artificial General Intelligence (AGI). The core of MLLMs lies in their capability to achieve cross-modal alignment. To attain this goal, current MLLMs typically follow a two-phase training paradigm: the pre-training phase and the instruction-tuning phase. Despite their success, there are shortcomings in the modeling of alignment capabilities within these models. Firstly, during the pre-training phase, there are inconsistencies in the degree of alignment among image-text pairs. Secondly, different tasks demand different levels of alignment capabilities during the instruction-tuning phase. To tackle these issues, we propose a new multimodal large language model AlignGPT to effectively enhance the alignment capabilities of MLLMs. More precisely, in the pre-training stage, instead of treating all image-text pairs equally, we assign different levels of alignment capabilities to different image-text pair, thereby solving the problem of alignment degree in image-text pairing. Then, in the instruction-tuning phase, we not only allocate global alignment capabilities to each task, but also dynamically configuring distinct local alignment capabilities based on the individual requirements of each task. Extensive experimental results show that our model achieves competitive performance on 12 downstream tasks.
+            Multimodal Large Language Models (MLLMs) are widely regarded as crucial in the exploration of Artificial General Intelligence (AGI). The core of MLLMs lies in their capability to achieve cross-modal alignment. To attain this goal, current MLLMs typically follow a two-phase training paradigm: the pre-training phase and the instruction-tuning phase. Despite their success, there are shortcomings in the modeling of alignment capabilities within these models. Firstly, during the pre-training phase, the model usually assumes that all image-text pairs are uniformly aligned, but in fact the degree of alignment between different image-text pairs is inconsistent. Secondly, the instructions currently used for finetuning incorporate a variety of tasks, different tasks's instructions usually require different levels of alignment capabilities, but previous MLLMs overlook these differentiated alignment needs. To tackle these issues, we propose a new multimodal large language model AlignGPT. In the pre-training stage, instead of treating all image-text pairs equally, we assign different levels of alignment capabilities to different image-text pairs. Then, in the instruction-tuning phase, we adaptively combine these different levels of alignment capabilities to meet the dynamic alignment needs of different instructions. Extensive experimental results show that our model achieves competitive performance on 12 benchmarks.
           </p>
         </div>
       </div>
@@ -239,9 +239,9 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2024nerfies,
+    <pre><code>@article{AlignGPT2024,
   author    = {Fei Zhao, Taotian Pang, Chunhui Li, Zhen Wu, Junjie Guo, Shangyu Xing, and Xinyu Dai},
-  title     = {AlignGPT: Enhancing Alignment Capability of Multi-modal Large Language Models},
+  title     = {AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability},
   journal   = {arxiv},
   year      = {2024},
 }</code></pre>
